@@ -80,40 +80,30 @@ img {
     position: relative;
 }
 
-.submenu #carrito {
+/* Aplicar el color de fondo y el efecto de desenfoque al menú del carrito */
+#carrito {
     display: none;
 }
 
 .submenu:hover #carrito {
+    border-radius: 10px;
     display: block;
     position: absolute;
     right: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Agrega el efecto de desenfoque */
     top: 100%;
     z-index: 1;
-    background-color: #4E4B5076;
+    background-color: #4E4B5076; /* Cambia el color de fondo */
     padding: 20px;  
     min-width: 400px;    
 }
 
+
 table {
     width: 100%;
 }
-#lista-carrito th {
-    background-color: #999; /* Fondo gris para las cabeceras */
-    color: #111; /* Texto en color negro para las cabeceras */
-    opacity: 0.7; /* Ajusta la opacidad de los textos al 70% */
-    transition: opacity 0.3s; /* Agrega una transición suave de opacidad */
-}
 
-#lista-carrito th:hover {
-    opacity: 1; /* Restaura la opacidad al 100% en hover */
-}
 
-th, td {
-    background: #ffffff;
-    color: #111111;
-}
 
 .borrar {
     background-color: #111111;
@@ -147,7 +137,7 @@ th, td {
     font-size: 90px;
     text-transform: uppercase;
     line-height: 1;
-    color: #111111;
+    color: ffffff;
     font-family: "Oswald", sans-serif;
     margin-bottom: 15px;
 }
@@ -204,11 +194,11 @@ th, td {
 
 .btn-2 {
     display: inline-block;
-    padding: 17px 70px;
-    background-color: #111111;
+    padding: 10px 25px;
+    background-color: #fb6007;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .products {
@@ -233,7 +223,7 @@ th, td {
 .product {
     text-align: center;
     padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1 );
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
@@ -244,7 +234,7 @@ th, td {
 
 .product h3 {
     font-size: 20px;
-    color: #111111;
+    color: #fb6007;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
